@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/global.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/operation-user-manage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>用户管理</h3>
+	<div class="warp">
+		<div class="manage-info">
+			<ul style="overflow: visible;">
+				<li class="platform-list">
+					<span>角色</span><input type="text" readonly placeholder="全部">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul>
+							<li>全部角色</li>
+							<li>A角色</li>
+							<li>B角色</li>
+							<li>C角色</li>
+						</ul>
+				</li>
+				<li class="down-list state-list">
+					<span>状态</span><input type="text" readonly placeholder="全部">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul>
+							<li>全部状态</li>
+							<li>A状态</li>
+							<li>B状态</li>
+							<li>C状态</li>
+						</ul>
+				</li>
+				<li>
+					<span>用户名</span><input type="text">
+				</li>
+				<li>
+					<span>姓名</span><input type="text">
+				</li>
+				<li>
+					<p class="manage-search">查询</p>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<div class="order-search-result manage-result">
+			<div class="manage-result-info">
+	            <div class="new-manage">新增</div>
+	            <p>共有<span>40</span>条数据，查询出<span>10</span>条</p>
+			</div>
+			<div class="search-result-table manage-result-table">
+				<table>
+	                <tr>
+	                	<th>ID</th>
+						<th>用户名</th>
+						<th>姓名</th>
+						<th>角色</th>
+						<th>创建时间</th>
+						<th>状态</th>
+						<th>操作</th>
+	                </tr>
+	                <tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>可用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+					<tr>
+						<td>001</td>
+						<td>2administrative</td>
+						<td>彭于晏</td>
+						<td>adimn</td>
+						<td>2017-20-23</td>
+						<td>禁用</td>
+						<td><span class="modify">修改</span></td>
+					</tr>
+                </table>
+			</div>
+		</div>
+	</div>
+	<div class="warp newuser-warp">
+		<h3>添加用户</h3>
+		<div class="newuser-info">
+			<span>用户名</span>
+			<strong>*</strong>
+			<input type="text">
+		</div>
+		<div class="newuser-info">
+			<span class="three-two">密码</span>
+			<strong>*</strong>
+			<input type="password">
+		</div>
+		<div class="newuser-info">
+			<span class="three-two">姓名</span>
+			<strong>*</strong>
+			<input type="text">
+		</div>
+		<div class="newuser-info">
+			<span class="three-two">角色</span>
+			<strong>*</strong>
+			<input type="text">
+		</div>
+		<div class="radio">
+			<span class="three-two">状态</span>
+			<strong>*</strong>
+			<input id="start" type="radio" name="s" value="0">
+			<label for="start">启用</label>
+			<input id="ban" type="radio" name="s" value="1">
+			<label for="ban">禁用</label>
+		</div>
+		<p class="add-button">创建</p>
+	</div>
+	<div class="copy-right">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.new-manage,.modify').on('click',function(){
+				$('.newuser-warp').css('display','block');
+			})
+			$('.add-button').on('click',function(){
+				$('.newuser-warp').css('display','none');
+			})
+		})
+	</script>
+</body>
+</html>

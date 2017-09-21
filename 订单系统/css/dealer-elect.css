@@ -1,0 +1,7 @@
+body{background-color: #F5F5F5; padding: 0 1.5%; font-family: PingFangSC-Regular;}
+.elect-tip{margin-top: 22px;}
+.elect-tip>p{font-size: 13px; color: #666666; line-height: 24px;}
+.platform{overflow: hidden; margin-top: 24px;}
+.platform li{float: left; margin-right: 34px; cursor: pointer;}
+.platform li img{width: 60px; border-radius: 8px;}
+.platform li p{font-size: 13px; color: #666666; line-height: 34px; text-align: center;}

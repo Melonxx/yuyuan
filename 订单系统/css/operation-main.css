@@ -1,0 +1,27 @@
+body{background-color: #F5F5F5; padding: 0 1.5%; font-family: PingFangSC-Regular;}
+h3{float: left;}
+.h3-info{
+	font-size: 14px;
+	color: #E55264;
+	line-height: 22px;
+	float: left;
+	margin-top: 26px;
+}
+.warp{
+	margin-top: 0;
+}
+.wait-proof li{
+    overflow: hidden;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 17px 0 15px 0;
+}
+.wait-proof li p:nth-child(1){
+    float: left;
+    font-size: 13px;
+	color: #666666;
+}
+.wait-proof li p:nth-child(2){
+	float: right;
+	font-size: 13px;
+	color: #AAAAAA;
+}

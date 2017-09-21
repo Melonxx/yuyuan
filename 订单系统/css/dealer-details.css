@@ -1,0 +1,36 @@
+body{
+	background-color: #F5F5F5; 
+	padding: 0 1.5%; 
+	font-family: PingFangSC-Regular;
+}
+.details-text h1{
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+	margin-top: 26px;
+}
+.details-text .time{
+	font-size: 13px;
+	color: #AAAAAA;
+	display: block;
+	text-align: center;
+	margin-top: 3px;
+}
+.details-text .details-info{
+	width: 695px; 
+	margin: 0 auto; 
+	margin-top: 13px;
+}
+.details-text .details-info p{
+	text-indent: 26px;
+	font-size: 13px;
+	color: #666666;
+	line-height: 20px;
+}
+.details-text .details-img{
+	width: 579px; 
+	height: 435px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}

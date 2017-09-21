@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/person.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>个人信息</h3>
+	<div class="warp">
+		<ul class="person-info">
+			<li>
+				<p>账户名</p>
+				<p>pengyuyan</p>
+			</li>
+			<li>
+				<p>姓名</p>
+				<p>彭于晏</p>
+			</li>
+			<li>
+				<p>角色</p>
+				<p>admin</p>
+			</li>
+			<li>
+				<p>创建时间</p>
+				<p>2017.10.24</p>
+			</li>
+		</ul>
+	</div>
+	<h3>更改密码</h3>
+	<div class="warp">
+		<ul class="password-info">
+			<li>
+				<div>
+					<span>原密码</span>
+				</div>
+				<input type="password">
+			</li>
+			<li>
+				<div>
+					<span>新密码</span>
+				</div>
+				<input type="password">
+			</li>
+			<li>
+				<div>
+					<span>新密码</span>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-cuowutishi"></use>
+					</svg>
+					<span class="password-error1">两次输入的密码不一致</span>
+				</div>
+				<input class="password-error2" type="password">
+			</li>
+		</ul>
+		<a class="person-save">保存</a>
+	</div>
+	<div class="success"><p>密码成功</p></div>
+	<script>
+		$(function(){
+			$('.person-save').on('click',function(){
+				$('.success').fadeIn(300).delay(600).fadeOut(300);
+			})
+		})
+	</script>
+</body>
+</html>

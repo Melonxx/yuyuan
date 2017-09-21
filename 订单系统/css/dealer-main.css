@@ -1,0 +1,8 @@
+body{background-color: #F5F5F5; padding: 0 1.5%; font-family: PingFangSC-Regular;}
+.message-info h4{font-size: 13px; color: #666666; float: left; margin-top: 16px;}
+.message-info-block h4.message-info-read{color: #AAA;}
+.message-info-block>li{background: #FFFFFF; box-shadow: 0 0 9px 1px rgba(0,0,0,0.06); border-radius: 8px; padding: 1px 21px; margin-bottom: 14px; border: 1px solid #fff;}
+.message-info-block>li:hover{border: 1px solid #8D9CA3;}
+.message-info-block>li p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #AAA;}
+.time{float: right;font-size: 13px; color: #AAAAAA; margin-top: 16px;}
+.message-info>li p{margin:10px 0 20px 0; font-size: 13px;}

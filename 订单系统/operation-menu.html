@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/operation-manu.css" rel="stylesheet" type="text/css" />
+	<style>
+	.admit1{display: none}
+	</style>
+</head>
+<body>
+	<ul class="manu-list">
+		<li class="manu-list-cld">
+		    <a href="operation-main.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shouye"></use>
+				</svg>
+				<span>首页</span>
+			</a>
+		</li>
+		<li id="user-manage">
+		    <a href="javascript:;" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-zhanghaoguanli"></use>
+				</svg>
+				<span>账号管理</span>
+			</a>
+		</li>
+		<li class="admit1">
+			<a href="operation-user-manage.html" target="mainCont">
+				<span>用户管理</span>
+			</a>
+		</li>
+		<li class="admit1">
+			<a href="operation-role-manage.html" target="mainCont">
+				<span>角色管理</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-agent.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-jingxiaoshangguanli"></use>
+				</svg>
+				<span>经销商管理</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-order.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-dingdanguanli"></use>
+				</svg>
+				<span>订单管理</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-leading-in.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-daorudingdanshuju"></use>
+				</svg>
+				<span>导入订单数据</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-proof.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pingzhengguanli"></use>
+				</svg>
+				<span>凭证审核</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+			<a href="operation-proof-update.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pingzhengzhongshengengxin"></use>
+				</svg>
+				<span>凭证终审更新</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-agent-modify.html" target="mainCont">
+			    <svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-xiugaihexiaojingxiaoshang"></use>
+				</svg>
+				<span>修改核销经销商</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+		    <a href="operation-operation.html" target="mainCont">
+			    <svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-caozuojilu"></use>
+				</svg>
+				<span>操作记录</span>
+			</a>
+		</li>
+		<li class="manu-list-cld">
+			<a href="operation-message.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-xitonggonggao"></use>
+				</svg>
+				<span>系统公告</span>
+			</a>
+		</li>
+	</ul>
+	<script>
+	    /*
+	    ($(function(){
+	    	$('#user-manage').on('click',function(){
+	    		$('.admit1').toggle(200);
+	    	})
+	    }))();
+	    ($(function(){
+	    	$('.manu-list li').on('click',function(){
+	    		$('.manu-list li').removeClass('active');
+	    		$('.manu-list li').addClass('active');
+	    	})
+	    }))();
+	    */
+	   $(function(){
+		   	$('#user-manage').on('click',function(){
+	    		$('.admit1').toggle(200);
+	    	});
+	    	$('.manu-list-cld').on('click',function(){
+					    		$('.admit1').hide(200);
+					    	});
+	    	$('.manu-list li').on('click',function(){
+	    		$('.manu-list li').removeClass('active');
+	    		$(this).addClass('active');
+	    	});
+	   })
+	</script>
+</body>
+</html>

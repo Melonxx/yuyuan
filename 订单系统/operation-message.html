@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/global.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/operation-message.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>系统公告</h3>
+	<div class="warp">
+		<div class="order-search">
+			<div>
+				<ul class="order-search-info order-search-info2" style="overflow: visible;">
+					<li class="down-list state-list">
+						<span>状态</span><input type="text" readonly placeholder="全部状态">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul>
+							<li>全部状态</li>
+							<li>A状态</li>
+							<li>B状态</li>
+							<li>C状态</li>
+						</ul>
+					</li>
+					<li>
+						<span>发布人</span><input type="text">
+					</li>
+					<li>
+						<span>公告名称</span><input type="text">
+					</li>
+					<li>
+						<span>发布时间</span><input type="date" class="date-input">
+						<span>&nbsp;&nbsp;—</span>
+						<input type="date" class="date-input">
+					</li>
+					<li>
+						<div class="search-button">查询</div>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="order-search-result">
+			<div class="search-result-info">
+				<input class="new-agent" type="button" value="新增">
+				<p>共有40条数据，查询出10条</p>
+			</div>
+			<div class="search-result-table">
+				<table>
+					<tr>
+						<th>编号</th>
+						<th>公告名称</th>
+						<th>摘要</th>
+						<th>创建人</th>
+						<th>状态</th>
+						<th>发布时间</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+					<tr>
+						<td>S732091</td>
+						<td>东莞市新大地汽车贸易有限公司</td>
+						<td><div>经销商摘要</div></td>
+						<td>房雪豪</td>
+						<td>未完成</td>
+						<td>2017.10.24</td>
+						<td><span class="modify">修改</span><span class="delete">删除</span><span class="publish">发布</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="pages">
+            <ul>
+            	<li>
+	            	<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-Nextpage"></use>
+					</svg>
+            	</li>
+            	<li>1</li>
+            	<li>2</li>
+            	<li>3</li>
+            	<li>4</li>
+            	<li>5</li>
+            	<li>
+	            	<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-Previouspage"></use>
+					</svg>
+            	</li>
+            </ul>
+            <div class="skip">
+	            <span>到第</span>
+	            <input type="text">
+	            <span>页</span>
+	            <input type="button" value="确认">
+            </div>
+		</div>
+		</div>
+	</div>
+	<div class="warp notice-warp">
+		<h3>添加公告</h3>
+		<div class="notice-info">
+			<p>公告名称<span>*</span></p>
+			<input type="text">
+		</div>
+		<div class="notice-info">
+			<p>摘要<span>*</span></p>
+			<input type="text">
+		</div>
+		<div class="notice-info">
+			<p>内容<span>*</span></p>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>
+		<div style="margin: 0 auto; text-align: center; margin-top: 28px;">
+			<input class="cancer" type="button" value="取消">
+			<input class="save" type="button" value="保存">
+		</div>
+	</div>
+	<div id="delete" class="warp warn-warp">
+		<h3>该公告信息将被永久删除，请确认！</h3>
+		<div style="margin: 0 auto; text-align: center; margin-top: 18px;">
+			<input class="cancer" type="button" value="取消">
+			<input class="save" type="button" value="保存">
+		</div>
+	</div>
+	<div id="publish" class="warp warn-warp">
+		<h3>该公告信息将被发布，发布后不可修改，请确认！</h3>
+		<div style="margin: 0 auto; text-align: center; margin-top: 18px;">
+			<input class="cancer" type="button" value="取消">
+			<input class="save" type="button" value="保存">
+		</div>
+	</div>
+	<div class="copy-right">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+    <script>
+		$(function(){
+			$('.new-agent, .modify').on('click',function(){
+				$('.notice-warp').css('display','block');
+			})
+			$('.cancer, .save').on("click",function(){
+				$('.notice-warp, .warn-warp').css('display','none');
+			})
+			$('.delete').on('click',function(){
+				$('#delete').show();
+			})
+			$('.publish').on('click',function(){
+				$('#publish').show();
+			})
+		})
+    </script>
+</body>
+</html>

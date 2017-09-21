@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/operation-proof.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="warp error-cur">
+	    <h4>待审核凭证</h4>
+    </div>
+	<h3>订单信息</h3>
+	<div class="warp">
+		<table class="order-table">
+			<tr>
+				<td>订单号</td>
+				<td>201702156165115</td>
+				<td>平台</td>
+				<td>天猫</td>
+				<td>用户名</td>
+				<td>chenyixun</td>
+			</tr>
+			<tr>
+				<td>姓名</td>
+				<td>陈奕迅</td>
+				<td>联系方式</td>
+				<td>13850144066</td>
+				<td>订单状态</td>
+				<td>已核销</td>
+			</tr>
+			<tr>
+				<td>经销商</td>
+				<td>东莞新大地汽车贸易有限公司</td>
+				<td>下单时间</td>
+				<td>2017.10.24 20:30</td>
+				<td>提交时间</td>
+				<td>2017.10.24 20:30</td>
+			</tr>
+			<tr>
+				<td>车系</td>
+				<td id="a11">迈腾</td>
+				<td>商品名称</td>
+				<td colspan="3">一起大众全新一代迈腾（全系）</td>
+			</tr>
+			<tr>
+				<td>金额</td>
+				<td>99.99</td>
+				<td>联系地址</td>
+				<td colspan="3">东莞市呵呵呵呵呵呵区呵呵呵接到呵呵1024号</td>
+			</tr>
+		</table>
+	</div>
+	<h3>经销商提交信息</h3>
+	<div class="warp">
+		<table class="order-table">
+			<tr>
+				<td>姓名</td>
+				<td>陈奕迅</td>
+				<td>联系方式</td>
+				<td>13850144066</td>
+				<td>身份证号</td>
+				<td>
+					<span>330368596215565214</span>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-tupian"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr>
+				<td>车系</td>
+				<td>迈腾</td>
+				<td>WIN码</td>
+				<td>
+					<span>2988494561511551</span>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-tupian"></use>
+					</svg>
+				</td>
+				<td>发票时间</td>
+				<td>2017.10.24</td>
+			</tr>
+			<tr>
+				<td>出AKK日期</td>
+				<td id="a11">2017.10.24</td>
+				<td>客户收货地址</td>
+				<td colspan="3">东莞市呵呵呵呵呵呵区呵呵呵接到呵呵1024号</td>
+			</tr>
+			<tr>
+				<td>备注</td>
+				<td colspan="5">我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注我是备注</td>
+			</tr>
+		</table>
+	</div>
+	<div class="agent-upload">
+		<ul>
+			<li>
+				<h3>发票图片</h3>
+				<div class="agent-pic agent-pic1">
+					<img src="images/1.png" alt="">
+					<div class="pic pic1">
+					    <h3>发票图片</h3>
+					    <svg class="icon" aria-hidden="true">
+						  <use xlink:href="#icon-danchuangguanbi"></use>
+						</svg>
+						<div class="clear"></div>
+					    <div>
+							<img src="images/1.png" alt="">
+					    </div>
+				    </div>
+				</div>
+			</li>
+			<li>
+				<h3>身份证图片</h3>
+				<div class="agent-pic agent-pic2">
+					<img src="images/2.png" alt="">
+					<div class="pic pic2">
+					    <h3>身份证图片</h3>
+					    <svg class="icon" aria-hidden="true">
+						  <use xlink:href="#icon-danchuangguanbi"></use>
+						</svg>
+						<div class="clear"></div>
+					    <div>
+							<img src="images/2.png" alt="">
+					    </div>
+				    </div>
+				</div>
+			</li>
+			<li>
+				<h3>其他凭证</h3>
+				<div class="agent-pic agent-pic3">
+					<img src="images/3.png" alt="">
+					<div class="pic pic3">
+					    <h3>其他凭证</h3>
+					    <svg class="icon" aria-hidden="true">
+						  <use xlink:href="#icon-danchuangguanbi"></use>
+						</svg>
+						<div class="clear"></div>
+					    <div>
+							<img src="images/3.png" alt="">
+					    </div>
+				    </div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="buttom-button">
+		<div class="submit-button">审核通过</div>
+		<div class="save-button">审核不通过</div>
+	</div>
+	<div class="nopass">
+		<h3>审核不通过原因</h3>
+		<div class="nopass-reason">
+			<input type="radio" id="nopass1" name="sex" value="0">
+			<label for="nopass1">下单人与购车人姓名不一致</label>
+		</div>
+		<div class="nopass-reason">
+			<input type="radio" id="nopass2" name="sex" value="0">
+			<label for="nopass2">线上购买车型与实际出库车型不一致</label>
+		</div>
+		<div class="nopass-reason">
+			<input type="radio" id="nopass3" name="sex" value="0">
+			<label for="nopass3">身份证号码填写错误</label>
+		</div>
+		<div class="nopass-reason">
+			<input type="radio" id="nopass4" name="sex" value="0">
+			<label for="nopass4">VIN码（车架号）填写错误</label>
+		</div>
+		<div class="nopass-reason">
+			<input type="radio" id="nopass5" name="sex" value="0">
+			<label for="nopass5">其他原因</label>
+		</div>
+		<textarea name="" id="" cols="31" rows="4"></textarea>
+		<div class="nopass-button">
+			<input id="confirm" type="button" value="确认">
+			<input id="cancel" type="button" value="取消">
+		</div>
+	</div>
+	<h3>审核记录</h3>
+	<div class="warp">
+		<div class="record">
+	        <span>2017.03.19 13:30 </span>
+	        <span> 飞飞初审通过</span>
+        </div>
+        <div class="record">
+	        <span>2017.03.19 13:30 </span>
+	        <span> 飞飞初审通过</span>
+        </div>
+	</div>
+	<div class="copy-right1">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+	<script>
+		//alert($('#a11').text());
+		$(function(){
+			$('.save-button').on('click',function(){
+				$('.nopass').css('display','block');
+				$(window).scrollTop(0);
+			})
+			$('#cancel,#confirm').on('click',function(){
+				$('.nopass').css('display','none');
+			})
+		})
+	</script>
+</body>
+</html>

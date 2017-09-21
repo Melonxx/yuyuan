@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/global.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/dealer-proof.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="warp error-cur">
+	    <h4>我是凭证审核的状态</h4>
+	    <span>不通过原因：</span><span>为什么不通过为什么不通过为什么不通过！</span>
+    </div>
+	<h3>订单信息</h3>
+	<div class="warp">
+		<table class="order-table">
+			<tr>
+				<td>订单号</td>
+				<td>201702156165115</td>
+				<td>平台</td>
+				<td>天猫</td>
+				<td>用户名</td>
+				<td>chenyixun</td>
+			</tr>
+			<tr>
+				<td>姓名</td>
+				<td>陈奕迅</td>
+				<td>联系方式</td>
+				<td>13850144066</td>
+				<td>订单状态</td>
+				<td>已核销</td>
+			</tr>
+			<tr>
+				<td>经销商</td>
+				<td>东莞新大地汽车贸易有限公司</td>
+				<td>下单时间</td>
+				<td>2017.10.24 20:30</td>
+				<td>提交时间</td>
+				<td>2017.10.24 20:30</td>
+			</tr>
+			<tr>
+				<td>车系</td>
+				<td id="a11">迈腾</td>
+				<td>商品名称</td>
+				<td colspan="3">一起大众全新一代迈腾（全系）</td>
+			</tr>
+			<tr>
+				<td>金额</td>
+				<td>99.99</td>
+				<td>联系地址</td>
+				<td colspan="3">东莞市呵呵呵呵呵呵区呵呵呵接到呵呵1024号</td>
+			</tr>
+		</table>
+	</div>
+	<h3>请填写凭证信息</h3>
+	<div class="warp">
+		<div class="flex-info person-info">
+			<ul>
+				<li>
+				    <p>
+						<span>购买人姓名</span>
+						<strong>*</strong>
+					</p>
+					<input type="text">
+				</li>
+				<li>
+					<p>
+						<span>联系方式</span>
+						<strong>*</strong>
+					</p>
+					<input type="text">
+				</li>
+				<li>
+					<p>
+						<span>身份证号</span>
+						<strong>*</strong>
+					</p>
+					<input type="text">
+				</li>
+			</ul>
+		</div>
+		<div class="flex-info">
+			<ul style="overflow: visible;">
+				<li class="down-list car-list">
+					<p>
+						<span>车系</span>
+						<strong>*</strong>
+					</p>
+					<div>
+						<input type="text" readonly placeholder="请选择车系">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul style="top: 83px;">
+							<li>全部</li>
+							<li>A系列</li>
+							<li>B系列</li>
+							<li>C系列</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>
+						<span>VIN码</span>
+						<strong>*</strong>
+					</p>
+					<input type="text">
+				</li>
+				
+			</ul>
+		</div><div class="clear"></div>
+		<div class="flex-info">
+			<ul>
+				<li>
+					<p>
+						<span>发票时间</span>
+						<strong>*</strong>
+					</p>
+					<input type="date">
+				</li>
+				<li>
+					<p>
+						<span>AKK出库日期</span>
+					</p>
+					<input type="date">
+				</li>
+			</ul>
+		</div>
+		<div class="flex-info address-info">
+			<p>
+				<span>邮寄地址</span>
+			</p>
+			<input type="text">
+		</div>
+		<div class="flex-info remark-info">
+			<p>
+				<span>备注</span>
+			</p>
+			<textarea></textarea>
+		</div>
+		<div class="flex-info pic-info">
+			<ul>
+				<li>
+					<p>
+						<span>发票图片</span>
+						<strong>*</strong>
+					</p>
+					<div class="file-border"><input type="file"></div>
+				</li>
+				<li>
+					<p>
+						<span>身份证图片</span>
+						<strong>*</strong>
+					</p>
+					<div class="file-border"><input type="file"></div>
+				</li>
+				<li>
+					<p>
+						<span>客户确认图片</span>
+					</p>
+					<div class="file-border"><input type="file"></div>
+				</li>
+				<li>
+					<p class="pic-tip">提交图片凭证时，请提交正确的发票及身份证图片，图片必须清晰。发票任一联均可，需加盖公章或财务章或发票专用章，身份证虚伪客户身份证原件正面照，照片或扫描件均可。</p>
+				</li>
+			</ul>
+		</div>
+		<div class="buttom-button">
+			<div class="save-button">保存凭证信息</div>
+			<div class="submit-button">提交审核</div>
+		</div>
+	</div>
+	<div class="copy-right1">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+	<script>
+		//alert($('#a11').text());
+		
+	</script>
+</body>
+</html>

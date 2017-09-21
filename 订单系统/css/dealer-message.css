@@ -1,0 +1,15 @@
+body{background-color: #F5F5F5; padding: 0 1.5%; font-family: PingFangSC-Regular;}
+.message-info h4{font-size: 13px; color: #666666; float: left; margin-top: 16px;}
+.message-info-solid>li{border-bottom: 1px solid #EEEEEE;}
+.time{float: right;font-size: 13px; color: #AAAAAA; margin-top: 16px;}
+.message-info-solid>li p{color: #666;}
+.message-info>li p{margin:10px 0 20px 0; font-size: 13px;}
+.pages{overflow: hidden;}
+.pages ul{margin: 22px 0 22px 35%;}
+.pages ul li{width: 26px; height: 26px; text-align: center; line-height: 26px; border: 1px solid #BBBBBB; float: left; margin-left: 10px; cursor: pointer;}
+.skip{}
+.skip span{font-size: 12px; color: #BBBBBB; margin-left: 5px;}
+.skip span:nth-child(1){margin-left: 15px}
+.skip input:nth-child(2){width: 26px; height: 26px; border: 1px solid #BBBBBB; margin-left: 5px;}
+.skip input:nth-child(4){background: #2CB3ED; border-radius: 4px; width: 41px; height: 23px; border: none; cursor: pointer; margin-left: 9px; color: #fff; font-size: 12px;}
+.copy-right{position: absolute; bottom: 2%; left: 50%; transform: translate(-50%,-50%); font-size: 12px; color: #AAAAAA;}

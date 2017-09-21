@@ -1,0 +1,12 @@
+.header{background-color: #8D9CA3; height: 70px; min-width: 1337px; line-height: 70px;}
+.header-logo{width: 142px; float: left; margin-top: 23.9px; margin-left: 29px;}
+.left-bar{float: left; margin-left: 2.65%;}
+.left-bar span{color: #fff; user-select: none; cursor: default;}
+.left-bar span:nth-child(1){font-size: 16px;}
+.left-bar span:nth-child(2){font-size: 12px;}
+.right-bar{float: right; margin-right: 2%;}
+.right-bar>div{display: inline-block; font-size: 14px; margin-right: 40px;}
+.right-bar>div a{color: #fff;}
+.right-bar .user svg{font-size: 20px; color: #fff; vertical-align: -0.3em;}
+.right-bar .exit svg{font-size: 14px; color: #fff;}
+.right-bar .user:hover, .right-bar .exit:hover{font-weight: bold;}

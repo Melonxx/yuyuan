@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/global.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/order.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>订单管理</h3>
+	<div class="warp">
+		<div class="order-search">
+			<div>
+				<ul class="order-search-info order-search-info1" style="overflow: visible;">
+					<li class="platform-list">
+						<span>平台</span><input type="text" readonly placeholder="全部">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul>
+							<li>全部平台</li>
+							<li>A平台</li>
+							<li>B平台</li>
+							<li>C平台</li>
+						</ul>
+					</li>
+					<li class="down-list state-list">
+						<span>订单状态</span><input type="text" readonly placeholder="全部">
+						<svg class="icon xiala" aria-hidden="true">
+						  <use xlink:href="#icon-xialaanniu"></use>
+						</svg>
+						<ul>
+							<li>全部状态</li>
+							<li>A系列</li>
+							<li>B系列</li>
+							<li>C系列</li>
+						</ul>
+					</li>
+					<li>
+						<span>订单编号</span><input type="text">
+					</li>
+					<li>
+						<span>下单时间</span><input type="date" class="date-input">
+						<span>&nbsp;&nbsp;—</span>
+						<input type="date" class="date-input">
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div>
+				<ul class="order-search-info order-search-info2">
+					<li>
+						<span>姓名</span><input type="text">
+					</li>
+					<li>
+						<span>经销商</span><input type="text">
+					</li>
+					<li>
+						<span>商品名称</span><input type="text">
+					</li>
+					<li>
+						<span>联系人电话</span><input type="text">
+					</li>
+					<li>
+						<div class="search-button">查询</div>
+					</li>
+					<li>
+						<div class="search-button">导出</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="order-search-result">
+			<div class="search-result-info">
+				<p>共有40条数据，查询出10条</p>
+			</div>
+			<div class="search-result-table">
+				<table>
+					<tr>
+						<th>平台</th>
+						<th>订单编号</th>
+						<th>姓名</th>
+						<th>联系电话</th>
+						<th>订单状态</th>
+						<th>下单时间</th>
+						<th>车系</th>
+						<th>意向经销商</th>
+						<th>凭证</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>汽车之家</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一汽一汽大众全新一汽</div></td>
+						<td>未上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>汽车</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一汽一汽大众全新汽大众全新汽大众全新汽大众全新汽大众全新一汽</div></td>
+						<td>未上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>之家</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一汽一汽一汽大众全新一汽一汽大众全新汽大众全新汽大众全新汽大一汽大众全新一汽一汽大众全新汽大众全新汽大众全新汽大大众全新一汽</div></td>
+						<td>未上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>汽车之家</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽一汽大众全新一汽一汽大众全新汽大众全新汽大众全新汽大大众全新一汽大众全新一汽一汽大众全新汽大众全新汽大众全新汽大一汽一汽大众全新一汽</div></td>
+						<td>未上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>之家</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一都是汽一汽大众全新一汽</div></td>
+						<td>未上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>汽车</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一汽一汽大众全新一汽</div></td>
+						<td>未上传上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+					<tr>
+						<td>汽车之家</td>
+						<td>201720214562022</td>
+						<td>彭于晏</td>
+						<td>159645214569</td>
+						<td>已核销</td>
+						<td>2017.10.2416:30</td>
+						<td>迈腾</td>
+						<td><div>一汽大众全新一地方汽一汽大众全新一汽</div></td>
+						<td>未上传上传</td>
+						<td><span class="result-read">查看</span><span class="result-editor">编辑</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="pages">
+            <ul>
+            	<li>
+	            	<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-Nextpage"></use>
+					</svg>
+            	</li>
+            	<li>1</li>
+            	<li>2</li>
+            	<li>3</li>
+            	<li>4</li>
+            	<li>5</li>
+            	<li>
+	            	<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-Previouspage"></use>
+					</svg>
+            	</li>
+            </ul>
+            <div class="skip">
+	            <span>到第</span>
+	            <input type="text">
+	            <span>页</span>
+	            <input type="button" value="确认">
+            </div>
+		</div>
+		</div>
+	</div>
+	<div id="review-order" class="warp review-order">
+		<h3>编辑订单</h3>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">订单号：</label>
+					<span>201756165645</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">平台：</label>
+					<span>天猫</span>
+				</li>
+				<li>
+					<label for="">用户名：</label>
+					<span>liKiiis</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">姓名：</label>
+					<span>立法法</span>
+				</li>
+				<li>
+					<label for="">联系方式：</label>
+					<span>13594456121</span>
+				</li>
+				<li>
+					<label for="">联系地址：</label>
+					<span>东莞市呵呵去呵呵悬呵呵镇呵呵人</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">下单时间：</label>
+					<span>2017.02.03 12：20</span>
+				</li>
+				<li>
+					<label for="">订单状态：</label>
+					<span>已完成</span>
+				</li>
+				<li>
+					<label for="">车系：</label>
+					<span>迈腾</span>
+				</li>
+				<li>
+					<label for="">商品名称：</label>
+					<span>迈腾看紧啊宿科技活动撒</span>
+				</li><li>
+					<label for="">金额：</label>
+					<span>99.99</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">备注；</label>
+					<textarea name="" id=""></textarea>
+				</li>
+			</ul>
+		</div>
+		<div class="add-button">保存</div>
+	</div>
+	<div id="editor-order" class="warp review-order">
+		<h3>编辑订单</h3>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">订单号：</label>
+					<span>201756165645</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">平台：</label>
+					<span>天猫</span>
+				</li>
+				<li>
+					<label for="">用户名：</label>
+					<span>liKiiis</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">姓名：</label>
+					<span>立法法</span>
+				</li>
+				<li>
+					<label for="">联系方式：</label>
+					<span>13594456121</span>
+				</li>
+				<li>
+					<label for="">联系地址：</label>
+					<span>东莞市呵呵去呵呵悬呵呵镇呵呵人</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">下单时间：</label>
+					<span>2017.02.03 12：20</span>
+				</li>
+				<li>
+					<label for="">订单状态：</label>
+					<input type="text">
+				</li>
+				<li>
+					<label for="">车系：</label>
+					<span>迈腾</span>
+				</li>
+				<li>
+					<label for="">商品名称：</label>
+					<span>迈腾看紧啊宿科技活动撒</span>
+				</li><li>
+					<label for="">金额：</label>
+					<span>99.99</span>
+				</li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<ul>
+				<li>
+					<label for="">意向经销商：</label>
+					<span>东莞市呵呵去呵呵经销商</span>
+				</li>
+				<li>
+					<label for="">核销经销商</label>
+					<input type="text">
+				</li>
+				<li>
+					<label for="">凭证状态</label>
+					<input type="text">
+				</li>
+			</ul>
+		</div>
+		<div class="add-button">保存</div>
+	</div>
+	<div class="copy-right">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+    <script>
+	    $(function(){
+	    	$('.result-read').on('click',function(){
+	    		$('#review-order').css('display','block');
+	    	})
+	    	$('.result-editor').on('click',function(){
+	    		$('#editor-order').show();
+	    	})
+	    	$('.add-button').on('click',function(){
+	    		$('#review-order').css('display','none');
+	    		$('#editor-order').css('display','none');
+	    	});
+	    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{background-color: #fff;}
+.manu-list{min-width: 197px;}
+.manu-list>li{height: 50px; line-height: 50px; color: #666; font-size: 14px; padding-left: 36px; cursor: pointer;}
+.manu-list>li.active{background-color: rgba(141,156,163,0.1); box-shadow: 6px 0px 0px 0px #8D9CA3 inset;}
+.manu-list>li:hover{transition:0.25s; background-color: rgba(141,156,163,0.1); box-shadow: 6px 0px 0px 0px #8D9CA3 inset;}
+.manu-list li svg{font-size: 19px; margin-right: 5px; color: #666;}
+.manu-list li span{color: #666;}
+.manu-list li a{display: block;}
+.manu-bottom{position: absolute; bottom: 3%; width: 100%; overflow: hidden;}
+.manu-bottom>li{height: 50px; color: #8D9CA3; margin-left: 30px; margin-bottom: 10px;}
+.manu-bottom li svg{float: left; font-size: 28px; margin-right: 7px; }
+.manu-bottom li>div{float: left; font-size: 12px;}
+.manu-bottom .list-solid{border-top: 1px solid #ddd; padding-top: 15px; width: 70%}

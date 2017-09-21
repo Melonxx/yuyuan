@@ -1,0 +1,87 @@
+body{
+	background-color: #F5F5F5; 
+	padding: 0 1.5%; 
+	font-family: PingFangSC-Regular;
+}
+.warp{
+	padding-bottom: 9px;
+}
+.person-info{
+    overflow: hidden;
+}
+.person-info>li{
+	float: left;
+	margin-top: 10px;
+	line-height: 34px;
+	margin-right: 85px;
+}
+.person-info>li p:nth-child(1){
+	font-size: 12px;
+	color: #AAAAAA;
+}
+.person-info>li p:nth-child(2){
+	font-size: 13px;
+	color: #666666;
+}
+.password-info{
+	overflow: hidden;
+}
+.password-info>li{
+	float: left;
+	margin-top: 17px;
+	margin-right: 44.5px;
+}
+.password-info>li span{
+	font-size: 12px;
+	color: #AAAAAA;
+	line-height: 34px;
+}
+.password-info>li svg{
+	color: #E55264;
+	margin-left: 22.2px;
+	font-size: 13.3px;
+}
+.password-info>li .password-error1{
+	color: #E55264;
+}
+.password-info>li .password-error2{
+	border: 1px solid #E55264;
+}
+.password-info>li input{
+    width: 196.5px;
+    height: 34px;
+    background: #FFFFFF;
+	border: 1px solid #BBBBBB;
+	text-indent: 16px;
+}
+.password-info>li input:hover, .password-info>li input:focus{
+	box-shadow: 0 0 6px 1px rgba(0,0,0,0.10);
+}
+.person-save{
+	display: block;
+	width: 80px;
+	height: 34px;
+	background: #2CB3ED;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	line-height: 34px;
+	margin-top: 24px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.success{
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.40);
+	border-radius: 8px;
+	width: 120px;
+	height: 70px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	line-height: 70px;
+	display: none;
+}

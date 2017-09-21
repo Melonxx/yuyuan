@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/iconfont.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/dealer-manu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<ul class="manu-list">
+		<li>
+		    <a href="dealer-main.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-shouye"></use>
+				</svg>
+				<span>首页</span>
+			</a>
+		</li>
+		<li>
+		    <a href="dealer-order.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-dingdanguanli"></use>
+				</svg>
+				<span>订单管理</span>
+			</a>
+		</li>
+		<li>
+		    <a href="dealer-proof.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pingzhengguanli"></use>
+				</svg>
+				<span>凭证管理</span>
+			</a>
+		</li>
+		<li>
+			<a href="dealer-error.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-mendianyichangdingdan"></use>
+				</svg>
+				<span>门店异常订单</span>
+			</a>
+		</li>
+		<li>
+		    <a href="dealer-elect.html" target="mainCont">
+			    <svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-pingzhengshenhe"></use>
+				</svg>
+				<span>核销电子凭证</span>
+			</a>
+		</li>
+		<li>
+			<a href="dealer-message.html" target="mainCont">
+				<svg class="icon" aria-hidden="true">
+				  <use xlink:href="#icon-xitonggonggao"></use>
+				</svg>
+				<span>通知中心</span>
+			</a>
+		</li>
+	</ul>
+	<ul class="manu-bottom">
+		<li class="list-solid">
+			<svg class="icon" aria-hidden="true">
+			    <use xlink:href="#icon-kefurexian"></use>
+			</svg>
+			<div>
+				<p>客服热线</p>
+				<p>0571-85823838</p>
+			</div>
+		</li>
+		<li>
+			<svg class="icon" aria-hidden="true">
+			    <use xlink:href="#icon-QQ"></use>
+			</svg>
+			<div>
+				<p>QQ群</p>
+				<p>13078997</p>
+			</div>
+		</li>
+	</ul>
+	<script>
+	    /*
+	    ($(function(){
+	    	$('#user-manage').on('click',function(){
+	    		$('.admit1').toggle(200);
+	    	})
+	    }))();
+	    ($(function(){
+	    	$('.manu-list li').on('click',function(){
+	    		$('.manu-list li').removeClass('active');
+	    		$('.manu-list li').addClass('active');
+	    	})
+	    }))();
+	    */
+	   $(function(){
+	    	$('.manu-list li').on('click',function(){
+	    		$('.manu-list li').removeClass('active');
+	    		$(this).addClass('active');
+	    	});
+	   })
+	</script>
+</body>
+</html>

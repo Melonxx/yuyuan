@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/global.js"></script>
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+	<link href="css/operation-role-manage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h3>角色管理</h3>
+	<div class="warp">
+		<div class="role-manage">
+			<input class="new-role" type="button" value="新增">
+			<table class="role-manage-table">
+				<tr>
+					<th>ID</th>
+					<th>角色</th>
+					<th>描述</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>admin</td>
+					<td>admin</td>
+					<td>2017-09-03</td>
+					<td>
+						<span class="modify">修改</span>
+						<span class="root">权限</span>
+						<span class="delete">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>管理员</td>
+					<td>斯蒂芬斯蒂芬</td>
+					<td>2017-09-03</td>
+					<td>
+						<span class="modify">修改</span>
+						<span class="root">权限</span>
+						<span class="delete">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>审核</td>
+					<td>admin</td>
+					<td>2017-09-03</td>
+					<td>
+						<span class="modify">修改</span>
+						<span class="root">权限</span>
+						<span class="delete">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>奋斗奋斗</td>
+					<td>根系订单数据</td>
+					<td>2017-09-03</td>
+					<td>
+						<span class="modify">修改</span>
+						<span class="root">权限</span>
+						<span class="delete">删除</span>
+					</td>
+				</tr>
+				<tr>
+					<td>005</td>
+					<td>奋斗斗</td>
+					<td>根系</td>
+					<td>2017-09-03</td>
+					<td>
+						<span class="modify">修改</span>
+						<span class="root">权限</span>
+						<span class="delete">删除</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="warp role-warp">
+		<h3>添加角色</h3>
+		<div class="role-info role-info1">
+			<span>角色</span>
+			<input type="text">
+		</div>
+		<div class="role-info role-info2">
+			<span>用户描述</span>
+			<textarea name="" id=""></textarea>
+		</div>
+		<div class="add-button">创建</div>
+	</div>
+	<div class="warp root-warp">
+		<h3>分配角色权限</h3>
+		<table class="root-table">
+			<tr>
+				<th>模块</th>
+				<th>功能</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"><label for="">用户管理</label>
+				</td>
+				<td>
+					<input type="checkbox"><label for="">添加用户</label>
+					<input type="checkbox"><label for="">修改</label>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan=2>
+					<input type="checkbox"><label for="">用户管理</label>
+				</td>
+				<td>
+					<input type="checkbox"><label for="">添加用户</label>
+					<input type="checkbox"><label for="">修改</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"><label for="">添加用户</label>
+					<input type="checkbox"><label for="">修改</label>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan=2>
+					<input type="checkbox"><label for="">角色管理</label>
+				</td>
+				<td>
+					<input type="checkbox"><label for="">添加角色</label>
+					<input type="checkbox"><label for="">修改</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"><label for="">分配权限</label>
+					<input type="checkbox"><label for="">删除</label>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan=2>
+					<input type="checkbox"><label for="">经销商管理</label>
+				</td>
+				<td>
+					<input type="checkbox"><label for="">导出经销商数据</label>
+					<input type="checkbox"><label for="">添加经销商</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"><label for="">修改</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox"><label for="">导入订单数据</label>
+				</td>
+				<td>
+					<input type="checkbox"><label for="">导入订单数据</label>
+					<input type="checkbox"><label for="">导出失败数据</label>
+				</td>
+			</tr>
+		</table>
+		<div class="add-button">提交</div>
+	</div>
+	<div class="warp warn-warp">
+		<h3>该角色信息将被永久删除，请确认！</h3>
+		<div style="margin: 0 auto; text-align: center; margin-top: 18px;">
+			<input class="cancer" type="button" value="取消">
+			<input class="save" type="button" value="确认">
+		</div>
+	</div>
+	<div class="copy-right">
+	    <p>Copyright &copy;版权归杭州驭缘网络科技有限公司所有</p>
+    </div>
+    <script>
+	    $(function(){
+	    	$('.new-role,.modify').on('click',function(){
+	    		$('.role-warp').css('display','block');
+	    	})
+	    	$('.add-button').on('click',function(){
+	    		$('.role-warp').css('display','none');
+	    		$('.root-warp').hide();
+	    	})
+	    	$('.delete').on('click',function(){
+	    		$('.warn-warp').show();
+	    	})
+	    	$('.cancer, .save').on("click",function(){
+	    		$('.warn-warp').hide();
+	    	})
+	    	$('.root').on("click",function(){
+	    		$('.root-warp').show();
+	    	})
+	    })
+    </script>
+</body>
+</html>
